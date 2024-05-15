@@ -1,0 +1,435 @@
+# Vivado resource utilization data is represented in anytable format
+# The data will be consumed by Resource Utilization flow in SysGen.
+
+{
+   'Design_Information' => [
+     { 
+        'PART' => 'xc7z030sbg485-1',
+        'Vivado_Stage' => 'Post Synthesis',
+        'Top_Module' => 'iir2mc',
+        'HDL_Language' => 'vhdl',
+        'Netlist_Crossprobe_File' => 'iir2mc.vhd.at',
+     },
+   ],
+   'Device_Resources' => [
+     { 
+        'BRAMs' => '265',
+        'DSPs' => '400',
+        'Registers' => '157200',
+        'LUTs' => '78600',
+     },
+   ],
+   'Resource_Utilization_Data' => [
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_79',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.addsub10',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/addsub10',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 36,
+                    'MUXF7' => 2,
+                    'MUXF8' => 1,
+                    'LUT3' => 52,
+                    'LUT5' => 49,
+                    'LUT2' => 59,
+                    'LUT6' => 143,
+                    'LUT4' => 82,
+                    'LUT1' => 5,
+                    'Total_LUTs' => 390,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_108',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.addsub11',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/addsub11',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 36,
+                    'MUXF7' => 2,
+                    'MUXF8' => 1,
+                    'LUT3' => 79,
+                    'LUT2' => 38,
+                    'LUT6' => 141,
+                    'LUT4' => 82,
+                    'LUT5' => 47,
+                    'LUT1' => 5,
+                    'Total_LUTs' => 392,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_137',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.addsub8',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/addsub8',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 36,
+                    'MUXF7' => 2,
+                    'MUXF8' => 1,
+                    'LUT3' => 79,
+                    'LUT2' => 38,
+                    'LUT6' => 141,
+                    'LUT4' => 82,
+                    'LUT5' => 47,
+                    'LUT1' => 5,
+                    'Total_LUTs' => 392,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_166',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.addsub9',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/addsub9',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 36,
+                    'MUXF7' => 2,
+                    'MUXF8' => 1,
+                    'LUT3' => 79,
+                    'LUT2' => 38,
+                    'LUT6' => 141,
+                    'LUT4' => 82,
+                    'LUT5' => 47,
+                    'LUT1' => 5,
+                    'Total_LUTs' => 392,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_215',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.convert1',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/convert1',
+          'Primitives' => [ 
+               {
+                    'LUT2' => 52,
+                    'CARRY4' => 20,
+                    'LUT3' => 70,
+                    'LUT6' => 44,
+                    'LUT4' => 11,
+                    'LUT5' => 8,
+                    'MUXF7' => 3,
+                    'Total_LUTs' => 185,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_240',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.convert2',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/convert2',
+          'Primitives' => [ 
+               {
+                    'LUT6' => 54,
+                    'CARRY4' => 11,
+                    'LUT4' => 49,
+                    'LUT5' => 54,
+                    'MUXF7' => 2,
+                    'MUXF8' => 1,
+                    'LUT2' => 1,
+                    'LUT3' => 3,
+                    'Total_LUTs' => 161,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_265',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.delay1',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/delay1',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_275',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.delay11',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/delay11',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_285',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.delay2',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/delay2',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_295',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.delay8',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/delay8',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_305',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.delay9',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/delay9',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_315',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.down_sample1',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/down_sample1',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_339',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.down_sample12',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/down_sample12',
+          'Primitives' => [ 
+               {
+                    'LUT2' => 1,
+                    'FDRE' => 1,
+                    'Total_LUTs' => 1,
+                    'Total_Registers' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_363',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.down_sample13',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/down_sample13',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 1,
+                    'Total_Registers' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_387',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.down_sample2',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/down_sample2',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_411',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.down_sample3',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/down_sample3',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_435',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.down_sample4',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/down_sample4',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_459',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.down_sample5',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/down_sample5',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_483',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.down_sample6',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/down_sample6',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_507',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.mult10',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/mult10',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 13,
+                    'LUT6' => 24,
+                    'LUT4' => 9,
+                    'LUT5' => 8,
+                    'LUT3' => 46,
+                    'LUT2' => 8,
+                    'LUT1' => 3,
+                    'DSP48E1' => 2,
+                    'Total_LUTs' => 98,
+                    'Total_DSPs' => 2,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_536',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.mult5',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/mult5',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 13,
+                    'LUT6' => 24,
+                    'LUT4' => 9,
+                    'LUT5' => 8,
+                    'LUT3' => 46,
+                    'LUT2' => 8,
+                    'LUT1' => 3,
+                    'DSP48E1' => 2,
+                    'Total_LUTs' => 98,
+                    'Total_DSPs' => 2,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_565',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.mult7',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/mult7',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 13,
+                    'LUT6' => 24,
+                    'LUT4' => 9,
+                    'LUT5' => 8,
+                    'LUT3' => 46,
+                    'LUT2' => 8,
+                    'LUT1' => 3,
+                    'DSP48E1' => 2,
+                    'Total_LUTs' => 98,
+                    'Total_DSPs' => 2,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_594',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.mult8',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/mult8',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 13,
+                    'LUT6' => 24,
+                    'LUT4' => 9,
+                    'LUT5' => 8,
+                    'LUT3' => 46,
+                    'LUT2' => 8,
+                    'LUT1' => 3,
+                    'DSP48E1' => 2,
+                    'Total_LUTs' => 98,
+                    'Total_DSPs' => 2,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_623',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.mult9',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/mult9',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 13,
+                    'LUT6' => 24,
+                    'LUT4' => 9,
+                    'LUT5' => 8,
+                    'LUT3' => 46,
+                    'LUT2' => 8,
+                    'LUT1' => 3,
+                    'DSP48E1' => 2,
+                    'Total_LUTs' => 98,
+                    'Total_DSPs' => 2,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_652',
+          'Hier_Name' => 'iir2mc_bd_wrapper.iir2mc_bd_i.iir2mc_1.U0.iir2mc_struct.up_sample',
+          'Cell_Name' => 'iir2mc_bd_i/iir2mc_1/U0/iir2mc_struct/up_sample',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     { 
+          'File_Name' => 'iir2mc.vhd',
+          'Line_Num' => 'Line_000',
+          'Hier_Name' => 'iir2mc',
+          'Cell_Name' => 'iir2mc',
+          'Primitives' => [ 
+               { 
+                    'CARRY4' => 240,
+                    'MUXF7' => 13,
+                    'MUXF8' => 5,
+                    'LUT3' => 592,
+                    'LUT5' => 292,
+                    'LUT2' => 267,
+                    'LUT6' => 784,
+                    'LUT4' => 433,
+                    'LUT1' => 35,
+                    'FDRE' => 386,
+                    'DSP48E1' => 10,
+                    'Total_LUTs' => 2403,
+                    'Total_Registers' => 386,
+                    'Total_DSPs' => 10,
+               },
+          ],
+     },
+   ],
+} 

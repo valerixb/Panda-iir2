@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 16:19:47 2024
+# Process ID: 5228
+# Current directory: /xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src
+# Command line: vivado -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: /xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/vivado.log
+# Journal file: /xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/vivado.jou
+# Running On: ub2020p4p3vm, OS: Linux, CPU Frequency: 1992.001 MHz, CPU Physical cores: 3, Host memory: 10437 MB
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace

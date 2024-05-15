@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"iir2mc_bd": {
+			"proto_instances": {
+			}
+		}
+	}
+}

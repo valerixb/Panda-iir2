@@ -1,0 +1,259 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x201EC3C919776358",
+      "design_src": "SYSGEN",
+      "device": "xc7z030sbg485-1",
+      "gen_directory": "../../../../iir2mc.gen/sources_1/bd/iir2mc_bd",
+      "name": "iir2mc_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "iir2mc_1": ""
+    },
+    "ports": {
+      "a0": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "a1": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "a2": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "b1": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "b2": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ce": {
+        "type": "ce",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "ce_output": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "iir2mc_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clr": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "in_x0": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "out_x0": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "res": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "iir2mc_1": {
+        "vlnv": "MaxIV:Panda_ModelComp:iir2mc:1.0",
+        "ip_revision": "345917982",
+        "xci_name": "iir2mc_bd_iir2mc_1_0",
+        "xci_path": "ip/iir2mc_bd_iir2mc_1_0/iir2mc_bd_iir2mc_1_0.xci",
+        "inst_hier_path": "iir2mc_1"
+      }
+    },
+    "nets": {
+      "a0_1": {
+        "ports": [
+          "a0",
+          "iir2mc_1/a0"
+        ]
+      },
+      "a1_1": {
+        "ports": [
+          "a1",
+          "iir2mc_1/a1"
+        ]
+      },
+      "a2_1": {
+        "ports": [
+          "a2",
+          "iir2mc_1/a2"
+        ]
+      },
+      "b1_1": {
+        "ports": [
+          "b1",
+          "iir2mc_1/b1"
+        ]
+      },
+      "b2_1": {
+        "ports": [
+          "b2",
+          "iir2mc_1/b2"
+        ]
+      },
+      "ce_1": {
+        "ports": [
+          "ce",
+          "iir2mc_1/ce"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "iir2mc_1/clk"
+        ]
+      },
+      "clr_1": {
+        "ports": [
+          "clr",
+          "iir2mc_1/clr"
+        ]
+      },
+      "iir2mc_1_ce_output": {
+        "ports": [
+          "iir2mc_1/ce_output",
+          "ce_output"
+        ]
+      },
+      "iir2mc_1_out_x0": {
+        "ports": [
+          "iir2mc_1/out_x0",
+          "out_x0"
+        ]
+      },
+      "in_x0_1": {
+        "ports": [
+          "in_x0",
+          "iir2mc_1/in_x0"
+        ]
+      },
+      "res_1": {
+        "ports": [
+          "res",
+          "iir2mc_1/res"
+        ]
+      }
+    }
+  }
+}

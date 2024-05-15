@@ -1,0 +1,584 @@
+
+*** Running vivado
+    with args -log iir2mc_bd_iir2mc_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source iir2mc_bd_iir2mc_1_0.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source iir2mc_bd_iir2mc_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1343.211 ; gain = 42.836 ; free physical = 128 ; free virtual = 23939
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.runs/iir2mc_bd_iir2mc_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: iir2mc_bd_iir2mc_1_0
+Command: synth_design -top iir2mc_bd_iir2mc_1_0 -part xc7z030sbg485-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Device 21-403] Loading part xc7z030sbg485-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5381
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2135.207 ; gain = 404.715 ; free physical = 127 ; free virtual = 22932
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'iir2mc_bd_iir2mc_1_0' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/synth/iir2mc_bd_iir2mc_1_0.vhd:76]
+INFO: [Synth 8-3491] module 'iir2mc' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc.vhd:723' bound to instance 'U0' of component 'iir2mc' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/synth/iir2mc_bd_iir2mc_1_0.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'iir2mc' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc.vhd:739]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_default_clock_driver' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc.vhd:691]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:59]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver__parameterized0' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:59]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:236]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:291]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver__parameterized0' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_default_clock_driver' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc.vhd:691]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_struct' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xlfpaddsub' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:678]
+INFO: [Synth 8-3491] module 'iir2mc_floating_point_v7_1_i0' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i0/synth/iir2mc_floating_point_v7_1_i0.v:53' bound to instance 'core_instance0' of component 'iir2mc_floating_point_v7_1_i0' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:741]
+INFO: [Synth 8-6157] synthesizing module 'iir2mc_floating_point_v7_1_i0' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i0/synth/iir2mc_floating_point_v7_1_i0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'iir2mc_floating_point_v7_1_i0' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i0/synth/iir2mc_floating_point_v7_1_i0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xlfpaddsub' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:678]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xlfpaddsub__parameterized0' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:678]
+INFO: [Synth 8-3491] module 'iir2mc_floating_point_v7_1_i1' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i1/synth/iir2mc_floating_point_v7_1_i1.v:53' bound to instance 'core_instance1' of component 'iir2mc_floating_point_v7_1_i1' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:753]
+INFO: [Synth 8-6157] synthesizing module 'iir2mc_floating_point_v7_1_i1' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i1/synth/iir2mc_floating_point_v7_1_i1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'iir2mc_floating_point_v7_1_i1' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i1/synth/iir2mc_floating_point_v7_1_i1.v:53]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xlfpaddsub__parameterized0' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:678]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xlfpaddsub__parameterized1' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:678]
+INFO: [Synth 8-3491] module 'iir2mc_floating_point_v7_1_i1' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i1/synth/iir2mc_floating_point_v7_1_i1.v:53' bound to instance 'core_instance1' of component 'iir2mc_floating_point_v7_1_i1' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:753]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xlfpaddsub__parameterized1' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:678]
+INFO: [Synth 8-638] synthesizing module 'xlpassthrough' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'xlpassthrough' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xlceprobe' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:116]
+INFO: [Synth 8-113] binding component instance 'buf_comp' to cell 'BUF' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xlceprobe' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xlfpconvert' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:861]
+INFO: [Synth 8-3491] module 'iir2mc_floating_point_v7_1_i2' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i2/synth/iir2mc_floating_point_v7_1_i2.v:53' bound to instance 'core_instance0' of component 'iir2mc_floating_point_v7_1_i2' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:916]
+INFO: [Synth 8-6157] synthesizing module 'iir2mc_floating_point_v7_1_i2' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i2/synth/iir2mc_floating_point_v7_1_i2.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'iir2mc_floating_point_v7_1_i2' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i2/synth/iir2mc_floating_point_v7_1_i2.v:53]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xlfpconvert' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:861]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xlfpconvert__parameterized0' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:861]
+INFO: [Synth 8-3491] module 'iir2mc_floating_point_v7_1_i3' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i3/synth/iir2mc_floating_point_v7_1_i3.v:53' bound to instance 'core_instance1' of component 'iir2mc_floating_point_v7_1_i3' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:926]
+INFO: [Synth 8-6157] synthesizing module 'iir2mc_floating_point_v7_1_i3' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i3/synth/iir2mc_floating_point_v7_1_i3.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'iir2mc_floating_point_v7_1_i3' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i3/synth/iir2mc_floating_point_v7_1_i3.v:53]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xlfpconvert__parameterized0' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:861]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_1027dfc7fc' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_1027dfc7fc' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xldsamp' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:264]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:388]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_reg' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_reg' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xldsamp' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xldsamp__parameterized0' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:264]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:388]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_reg__parameterized1' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_reg__parameterized1' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xldsamp__parameterized0' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xldsamp__parameterized1' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:264]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:388]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xldsamp__parameterized1' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xlfpmult' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:1036]
+INFO: [Synth 8-3491] module 'iir2mc_floating_point_v7_1_i4' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i4/synth/iir2mc_floating_point_v7_1_i4.v:53' bound to instance 'core_instance0' of component 'iir2mc_floating_point_v7_1_i4' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:1087]
+INFO: [Synth 8-6157] synthesizing module 'iir2mc_floating_point_v7_1_i4' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i4/synth/iir2mc_floating_point_v7_1_i4.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'iir2mc_floating_point_v7_1_i4' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i4/synth/iir2mc_floating_point_v7_1_i4.v:53]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xlfpmult' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:1036]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xlfpmult__parameterized0' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:1036]
+INFO: [Synth 8-3491] module 'iir2mc_floating_point_v7_1_i4' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/iir2mc_floating_point_v7_1_i4/synth/iir2mc_floating_point_v7_1_i4.v:53' bound to instance 'core_instance0' of component 'iir2mc_floating_point_v7_1_i4' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:1087]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xlfpmult__parameterized0' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:1036]
+INFO: [Synth 8-638] synthesizing module 'iir2mc_xlusamp' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:471]
+INFO: [Synth 8-113] binding component instance 'sel_gen' to cell 'FDSE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:514]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg.vhd:20' bound to instance 'sampled_d_reg2' of component 'synth_reg' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:581]
+INFO: [Synth 8-638] synthesizing module 'synth_reg' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:31]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_xlusamp' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc_entity_declarations.vhd:471]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_struct' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/iir2mc.vhd:739]
+INFO: [Synth 8-256] done synthesizing module 'iir2mc_bd_iir2mc_1_0' (0#1) [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/synth/iir2mc_bd_iir2mc_1_0.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ipshared/736f/hdl/xlclockdriver_rd.vhd:212]
+WARNING: [Synth 8-7129] Port clr in module synth_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_clk in module iir2mc_xlusamp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_clr in module iir2mc_xlusamp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[7] in module carry_chain__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized57 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[47] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[46] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[45] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[44] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[43] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[42] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[41] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[40] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[39] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[38] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[37] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[36] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[35] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[34] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[33] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[32] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[31] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[30] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[29] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[28] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[27] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[26] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[25] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[24] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[23] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[22] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[21] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[20] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[19] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[18] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[17] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[16] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[15] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[14] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[13] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[12] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[11] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[10] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[9] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[8] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[7] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[6] in module flt_mult_round is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2367.145 ; gain = 636.652 ; free physical = 122 ; free virtual = 22669
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2367.145 ; gain = 636.652 ; free physical = 122 ; free virtual = 22670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2367.145 ; gain = 636.652 ; free physical = 122 ; free virtual = 22670
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2367.145 ; gain = 0.000 ; free physical = 121 ; free virtual = 22670
+INFO: [Netlist 29-17] Analyzing 1450 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/constrs/iir2mc.xdc] for cell 'U0'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/constrs/iir2mc.xdc:4]
+Finished Parsing XDC File [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/constrs/iir2mc.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/constrs/iir2mc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/iir2mc_bd_iir2mc_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/iir2mc_bd_iir2mc_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.runs/iir2mc_bd_iir2mc_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.runs/iir2mc_bd_iir2mc_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2416.906 ; gain = 0.000 ; free physical = 123 ; free virtual = 22680
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  BUF => LUT1: 1 instance 
+  FDE => FDRE: 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2416.941 ; gain = 0.000 ; free physical = 128 ; free virtual = 22682
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2416.941 ; gain = 686.449 ; free physical = 124 ; free virtual = 22677
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030sbg485-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2416.941 ; gain = 686.449 ; free physical = 124 ; free virtual = 22677
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.runs/iir2mc_bd_iir2mc_1_0_synth_1/dont_touch.xdc, line 24).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/mult10/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/mult5/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/mult7/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/mult8/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/mult9/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/convert2/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/convert1/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/addsub11/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/addsub8/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/addsub9/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/iir2mc_struct/addsub10/\comp0.core_instance0 . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2416.941 ; gain = 686.449 ; free physical = 124 ; free virtual = 22677
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2416.941 ; gain = 686.449 ; free physical = 134 ; free virtual = 22669
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'flt_add_logic:/ALIGN_BLK/SUB_DELAY' (delay__parameterized0) to 'flt_add_logic:/ALIGN_BLK/SUBTRACT_PREADD_DEL'
+INFO: [Synth 8-223] decloning instance 'flt_add_logic:/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'flt_add_logic:/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'flt_add_logic:/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'flt_add_logic:/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/addsub10/comp0.core_instance0/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/iir2mc_struct/addsub10/comp0.core_instance0/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/addsub10/comp0.core_instance0/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/iir2mc_struct/addsub10/comp0.core_instance0/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'iir2mc_floating_point_v7_1_i1:/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'iir2mc_floating_point_v7_1_i1:/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'iir2mc_floating_point_v7_1_i1:/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'iir2mc_floating_point_v7_1_i1:/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'U0/iir2mc_struct/convert1/comp0.core_instance0/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert2/comp1.core_instance1/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/iir2mc_struct/convert2/comp1.core_instance1/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/iir2mc_struct/convert2/comp1.core_instance1/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/iir2mc_struct/convert2/comp1.core_instance1/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized0) to 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'iir2mc_floating_point_v7_1_i4:/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (iir2mc_default_clock_driver/clockdriver_x0/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module iir2mc.
+WARNING: [Synth 8-3332] Sequential element (iir2mc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[5].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module iir2mc.
+WARNING: [Synth 8-3332] Sequential element (iir2mc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[4].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module iir2mc.
+WARNING: [Synth 8-3332] Sequential element (iir2mc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[3].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module iir2mc.
+WARNING: [Synth 8-3332] Sequential element (iir2mc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[2].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module iir2mc.
+WARNING: [Synth 8-3332] Sequential element (iir2mc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[1].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module iir2mc.
+WARNING: [Synth 8-3332] Sequential element (iir2mc_struct/up_sample/sel_gen) is unused and will be removed from module iir2mc.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 123 ; free virtual = 22646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 122 ; free virtual = 22650
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 124 ; free virtual = 22652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 129 ; free virtual = 22658
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 120 ; free virtual = 22646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 119 ; free virtual = 22645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 122 ; free virtual = 22648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 120 ; free virtual = 22646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 133 ; free virtual = 22658
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 132 ; free virtual = 22658
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp_84      | C+A*B        | 24     | 17     | 0      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_84      | PCIN>>17+A*B | 0      | 7      | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_64      | C+A*B        | 24     | 17     | 0      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_64      | PCIN>>17+A*B | 0      | 7      | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_44      | C+A*B        | 24     | 17     | 0      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_44      | PCIN>>17+A*B | 0      | 7      | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp_24      | C+A*B        | 24     | 17     | 0      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp_24      | PCIN>>17+A*B | 0      | 7      | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp         | C+A*B        | 24     | 17     | 0      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp         | PCIN>>17+A*B | 0      | 7      | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUF     |     1|
+|2     |CARRY4  |    24|
+|3     |DSP48E1 |    10|
+|5     |LUT1    |    36|
+|6     |LUT2    |   273|
+|7     |LUT3    |   593|
+|8     |LUT4    |   434|
+|9     |LUT5    |   293|
+|10    |LUT6    |   788|
+|11    |MUXCY   |   793|
+|12    |MUXF7   |    13|
+|13    |MUXF8   |     5|
+|14    |XORCY   |   523|
+|15    |FDE     |    32|
+|16    |FDRE    |   367|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 2432.914 ; gain = 702.422 ; free physical = 131 ; free virtual = 22657
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 345 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 2432.914 ; gain = 652.625 ; free physical = 125 ; free virtual = 22650
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 2432.922 ; gain = 702.422 ; free physical = 125 ; free virtual = 22650
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2432.922 ; gain = 0.000 ; free physical = 398 ; free virtual = 22929
+INFO: [Netlist 29-17] Analyzing 1401 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.922 ; gain = 0.000 ; free physical = 380 ; free virtual = 22912
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 248 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 216 instances
+  FDE => FDRE: 32 instances
+
+Synth Design complete | Checksum: 219820b7
+INFO: [Common 17-83] Releasing license: Synthesis
+172 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:13 . Memory (MB): peak = 2432.949 ; gain = 1071.895 ; free physical = 379 ; free virtual = 22911
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1963.923; main = 1637.861; forked = 343.333
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3465.930; main = 2432.918; forked = 1033.012
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2456.926 ; gain = 0.000 ; free physical = 379 ; free virtual = 22911
+INFO: [Common 17-1381] The checkpoint '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.runs/iir2mc_bd_iir2mc_1_0_synth_1/iir2mc_bd_iir2mc_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP iir2mc_bd_iir2mc_1_0, cache-ID = 857244b49ab7b3da
+INFO: [Coretcl 2-1174] Renamed 335 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2456.926 ; gain = 0.000 ; free physical = 360 ; free virtual = 22906
+INFO: [Common 17-1381] The checkpoint '/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.runs/iir2mc_bd_iir2mc_1_0_synth_1/iir2mc_bd_iir2mc_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file iir2mc_bd_iir2mc_1_0_utilization_synth.rpt -pb iir2mc_bd_iir2mc_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 16:22:20 2024...

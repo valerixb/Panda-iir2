@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 16:22:26 2024
+# Process ID: 5508
+# Current directory: /xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.runs/synth_1
+# Command line: vivado -log iir2mc_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source iir2mc_bd_wrapper.tcl
+# Log file: /xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.runs/synth_1/iir2mc_bd_wrapper.vds
+# Journal file: /xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.runs/synth_1/vivado.jou
+# Running On: ub2020p4p3vm, OS: Linux, CPU Frequency: 1992.001 MHz, CPU Physical cores: 3, Host memory: 10437 MB
+#-----------------------------------------------------------
+source iir2mc_bd_wrapper.tcl -notrace

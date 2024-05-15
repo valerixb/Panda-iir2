@@ -1,0 +1,4 @@
+set_property SRC_FILE_INFO {cfile:/xilinxworks/sysgen/notch_panda/netlist/ip/iir2mc/src/ip_catalog/iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/constrs/iir2mc.xdc rfile:../../../iir2mc.gen/sources_1/bd/iir2mc_bd/ip/iir2mc_bd_iir2mc_1_0/constrs/iir2mc.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
+current_instance U0
+set_property src_info {type:SCOPED_XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_multicycle_path -from [get_cells -of [filter [all_fanout -flat -endpoints [get_pins {iir2mc_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[1].ce_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/Q}]] IS_ENABLE]] -to [get_cells -of [filter [all_fanout -flat -endpoints [get_pins {iir2mc_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[1].ce_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/Q}]] IS_ENABLE]] -hold 124
